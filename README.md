@@ -42,6 +42,7 @@ Source of Code- Kaggle (https://www.kaggle.com/code/darshanajayr/random-forset/i
         geom_bar(stat = "identity") +
         labs(title = "Platform Usage Count", x = "Platform", y = "Count") +
         theme_minimal()
+![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Platform%20usage%20count%20.png)
 
 ## Interpretation
 The graph shows that the Android platform dominates usage, with significantly higher user counts compared to other platforms. Other platforms like iOS, Mac, and Web Player have minimal
@@ -64,6 +65,8 @@ engagement, suggesting Android should be the primary focus for optimization and 
       geom_bar(stat = "identity") +
       labs(title = "Average Minutes Played by Platform", y = "Average Minutes", x = "Platform") +
       theme_minimal()
+![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Avg%20minutes%20played%20by%20platform%20.png)
+
 ## Interpretation
 The graph shows that Mac users have the highest average minutes played, followed closely by cast to device and Windows users. Android and Web Player have moderate engagement, while iOS users exhibit the lowest average playtime. This indicates Mac users are the most engaged, while iOS might need attention for improvement.
 
@@ -86,6 +89,10 @@ The graph shows that Mac users have the highest average minutes played, followed
            y = "Percentage (%)",
            fill = "Track Status") +
       theme_minimal()
+
+ ![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Skip%20behaviour%20by%20shuffle%20mode.png)
+ 
+
 ## Interpretation
 The graph illustrates that the majority of tracks are completed in both shuffle modes (ON and OFF), with very few being skipped. The proportion of skips is slightly higher when shuffle mode is ON, indicating that shuffling might influence skipping behavior.
 
@@ -104,6 +111,7 @@ The graph illustrates that the majority of tracks are completed in both shuffle 
            x = "Start → End Reason", y = "Count") +
       theme_minimal(base_size = 13) +
       theme(axis.text.x = element_text(angle = 25, hjust = 1))
+ ![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Start%20--%20End%20comnbinations.png)
 
 ## Interpretation
 The graph indicates that the most common start-to-end reason combination is trackdone →
@@ -140,7 +148,8 @@ trackdone, with significantly higher counts compared to other combinations. This
                  +          col = colorRampPalette(c("darkgreen", "green", "white"))(200),
                  +          number.cex = 0.7)
 
- 
+  ![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Correlation%20matrix%20by%20features.png)
+
 ## Interpretation 
 The correlation matrix reveals several key relationships between session attributes:
 
@@ -416,10 +425,8 @@ context for a smoother experience.
      MAE: 0.8513765 
 
  ## Interpretation 
- Random Forest regression model, which included multiple features such as platform, shuffle status,
-hour of play, and start/end reasons, resulted in an R-squared of 0.623.
-This means that 62.3% of the variation in listening duration (minutes played) is explained by
-the model, indicating a good level of predictive power.
+Random Forest regression model, which included multiple features such as platform, shuffle status, hour of play, and start/end reasons, resulted in an R-squared of 0.623.
+This means that 62.3% of the variation in listening duration (minutes played) is explained by the model, indicating a good level of predictive power.
  
   ### Check if platform alone has any effect on the duration 
      
@@ -471,14 +478,13 @@ the model, indicating a good level of predictive power.
 
 ## Interpretation
 
-● The R-squared value is just 1.18%, meaning that platform explains almost none of the
+1- The R-squared value is just 1.18%, meaning that platform explains almost none of the
 variability in listening duration.
 
-● Compared to the full model (R² = 62.3%), this model performs significantly worse.
+2- Compared to the full model (R² = 62.3%), this model performs significantly worse.
 
-● The RMSE and MAE have both increased, further confirming that predictions are less
+3- The RMSE and MAE have both increased, further confirming that predictions are less
 accurate when platform is the only feature.
+
 Hence, Platform Has Minimal Impact; Context Matters More
-While slight differences exist across platforms, playback context, time of day, and shuffle
-status are stronger predictors of listening duration. This supports a shift toward context-
-driven personalization rather than platform-based targeting
+While slight differences exist across platforms, playback context, time of day, and shuffle status are stronger predictors of listening duration. This supports a shift toward context-driven personalization rather than platform-based targeting
