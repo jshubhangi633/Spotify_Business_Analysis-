@@ -1,6 +1,11 @@
 
-# Spotify_Business_Analytics
-Source of Code- Kaggle (https://www.kaggle.com/code/darshanajayr/random-forset/input?select=spotify_history.csv)
+# Spotify Business Analysis
+## This project uncovers key insights into Spotify users’ listening patterns, engagement trends, and playback preferences through data wrangling, hypothesis testing, and machine learning in R. The findings offer actionable strategies to enhance Spotify’s user experience and inform product development.
+![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Spotify-Icon-White-Dark-Background-Logo.wine.svg)
+
+
+# Source of Code
+- [Dataset from Kaggle](https://www.kaggle.com/code/darshanajayr/random-forset/input?select=spotify_history.csv)
 
 
 # Installing Packages to load data 
@@ -266,6 +271,15 @@ Hence, You can reject the null hypothesis (H₀). There is statistically signifi
 
 Time of Day Influences Listening Habits
 Engagement peaks during Evening, followed by Late Night and Morning hours. These patterns suggest opportunities for time-specific playlists and ad campaigns to increase retention and satisfaction.
+
+## Business Recommendation
+
+● Personalize Playlists by Time of Day- Create time-based curated playlists (e.g., "Evening Vibes", "Late Night Lo-fi") to match listener moods and contexts.
+
+● Platform Notifications & Engagement- Schedule push notifications (e.g., “New tracks for your evening”) around peak time blocks to increase click-through rates.
+
+● Advertising Revenue Optimization- Offer premium ad slots to advertisers during peak hours where listener activity is highest.
+
   
 # Hypothesis 2: Skipping is Influenced by Playback Settings Eg- Shuffling 
     
@@ -295,6 +309,14 @@ Hence, Shuffle Mode Raises Skip Rates
 Users are about 2.5 times more likely to skip songs when shuffle is enabled. This highlights
 a need for a more intelligent shuffle algorithm that considers user preferences and listening
 context for a smoother experience.
+
+Business Recommendation:
+
+● Optimize Shuffle Experience: Since users are significantly more likely to skip songs in shuffle mode, Spotify should consider enhancing the shuffle algorithm.
+
+● Integrating user listening patterns, mood/context detection, or favoriting behavior can help improve the relevance of shuffled tracks and reduce skip rates.
+
+● This could lead to improved user satisfaction, longer sessions, and higher engagement.
 
 # Hypothesis 3- Does Platform Influence Listening Duration?
  
@@ -488,3 +510,9 @@ accurate when platform is the only feature.
 
 Hence, Platform Has Minimal Impact; Context Matters More
 While slight differences exist across platforms, playback context, time of day, and shuffle status are stronger predictors of listening duration. This supports a shift toward context-driven personalization rather than platform-based targeting
+
+## Business Recommendation
+
+● Design campaigns and playlists influenced by reasons for session start/end (e.g., auto-curate "morning motivation" or "winding down" lists).
+
+● Do not overinvest in platform-specific strategies, as the impact of platform choice on engagement is minimal.
