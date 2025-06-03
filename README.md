@@ -1,6 +1,6 @@
 
 # Spotify Business Analysis
-## This project uncovers key insights into Spotify users’ listening patterns, engagement trends, and playback preferences through data wrangling, hypothesis testing, and machine learning in R. The findings offer actionable strategies to enhance Spotify’s user experience and inform product development.
+This project uncovers key insights into Spotify users’ listening patterns, engagement trends, and playback preferences through data wrangling, hypothesis testing, and machine learning in R. The findings offer actionable strategies to enhance Spotify’s user experience and inform product development.
 ![Graph](https://github.com/jshubhangi633/Spotify_Business_Analysis-/blob/main/Spotify-Icon-White-Dark-Background-Logo.wine.svg)
 
 
